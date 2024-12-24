@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../style/typography/restaurant_text_styles.dart';
+
 class MenuCard extends StatelessWidget {
   final String name;
   final bool isFoods;
@@ -26,10 +28,10 @@ class MenuCard extends StatelessWidget {
                 width: 80,
               ),
               const SizedBox(height: 16),
-              Text(
-                name,
-                style: const TextStyle(
-                  fontSize: 14
+              Flexible(
+                child: Text(
+                  name,
+                  style: RestaurantTextStyles.body,
                 ),
               )
             ],
